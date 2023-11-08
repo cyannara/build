@@ -15,6 +15,10 @@ public class CustomerController {
 
 	@Autowired CustomerRepository repo;
 	
+        @GetMapping("/")
+        public main(){
+		return "home";
+	}	
 	@GetMapping("/customer")
 	public Iterable<Customer> findall(){
 		return repo.findAll();
