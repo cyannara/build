@@ -16,7 +16,7 @@ public class CustomerController {
 	@Autowired CustomerRepository repo;
 	
         @GetMapping("/")
-        public main(){
+        public String main(){
 		return "home";
 	}
 
